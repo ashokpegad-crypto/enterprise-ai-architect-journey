@@ -131,3 +131,36 @@ Relevant experience with only one skill means additional development is needed.
 Otherwise, the candidate is not currently eligible.
 
 Invalid yes/no input is rejected and requested again.
+
+### For Loop
+
+A `for` loop iterates through items in a sequence.
+
+```python
+for ticket in tickets:
+    print(ticket)
+While Loop
+
+A while loop continues while a condition is true.
+
+while pending_tickets > 0:
+    pending_tickets -= 1
+Break
+
+break stops the entire loop immediately.
+
+Continue
+
+continue skips the current iteration and moves to the next one.
+
+Business Use Case
+
+A support-ticket processor can use:
+
+continue to skip closed tickets
+
+break to stop processing when a stop signal is received
+
+if conditions to prioritize urgent tickets
+
+counters to track processed tickets
