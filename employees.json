@@ -1,0 +1,62 @@
+[
+       {
+              "employee_id": "EMP001",
+              "employee_name": "Ashok",
+              "department": "IT",
+              "role": "Pega Developer",
+              "active": true,
+              "location": "Bangalore",
+              "experience_years": 8,
+              "assigned_cases": 12
+       },
+       {
+              "employee_id": "EMP002",
+              "employee_name": "Ravi",
+              "department": "HR",
+              "role": "HR Specialist",
+              "active": false,
+              "location": "Hyderabad",
+              "experience_years": 5,
+              "assigned_cases": 4
+       },
+       {
+              "employee_id": "EMP003",
+              "employee_name": "Priya",
+              "department": "IT",
+              "role": "Python Developer",
+              "active": true,
+              "location": "Chennai",
+              "experience_years": 4,
+              "assigned_cases": 9
+       },
+       {
+              "employee_id": "EMP004",
+              "employee_name": "Kiran",
+              "department": "Finance",
+              "role": "Financial Analyst",
+              "active": true,
+              "location": "Pune",
+              "experience_years": 6,
+              "assigned_cases": 7
+       },
+       {
+              "employee_id": "EMP005",
+              "employee_name": "Suresh",
+              "department": "IT",
+              "role": "System Architect",
+              "active": false,
+              "location": "Mumbai",
+              "experience_years": 10,
+              "assigned_cases": 15
+       },
+       {
+              "employee_id": "EMP006",
+              "employee_name": "Anil",
+              "department": "HR",
+              "role": "HR Manager",
+              "active": true,
+              "location": "Delhi",
+              "experience_years": 9,
+              "assigned_cases": 6
+       }
+]
