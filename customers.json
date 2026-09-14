@@ -1,0 +1,23 @@
+[
+    {
+        "customer_id": "CUST001",
+        "customer_name": "Ashok",
+        "customer_type": "Gold",
+        "active": true,
+        "total_cases": 5
+    },
+    {
+        "customer_id": "CUST002",
+        "customer_name": "Ravi",
+        "customer_type": "Premium",
+        "active": false,
+        "total_cases": 3
+    },
+    {
+        "customer_id": "CUST003",
+        "customer_name": "Priya",
+        "customer_type": "Gold",
+        "active": true,
+        "total_cases": 8
+    }
+]
