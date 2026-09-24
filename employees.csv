@@ -1,0 +1,7 @@
+employee_id,employee_name,department,role,active,location,experience_years,assigned_cases
+EMP001,Ashok,IT,Pega Developer,True,Bangalore,8,12
+EMP002,Ravi,HR,HR Specialist,False,Hyderabad,5,4
+EMP003,Priya,IT,Python Developer,True,Chennai,4,9
+EMP004,Kiran,Finance,Financial Analyst,True,Pune,6,7
+EMP005,Suresh,IT,System Architect,False,Mumbai,10,15
+EMP006,Anil,HR,HR Manager,True,Delhi,9,6

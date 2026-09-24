@@ -1,0 +1,12 @@
+{
+    "environment": "development",
+    "total_employees": 6,
+    "active_employees": 4,
+    "inactive_employees": 2,
+    "employees_by_department": {
+        "IT": 3,
+        "HR": 2,
+        "Finance": 1
+    },
+    "total_assigned_cases": 53
+}
