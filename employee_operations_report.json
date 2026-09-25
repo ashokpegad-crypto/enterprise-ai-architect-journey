@@ -1,0 +1,28 @@
+{
+    "total_employees": 6,
+    "active_employees": 4,
+    "inactive_employees": 2,
+    "total_assigned_cases": 53,
+    "average_experience": 7.0,
+    "departments": {
+        "IT": {
+            "employee_count": 3,
+            "active_count": 2,
+            "assigned_cases": 36
+        },
+        "HR": {
+            "employee_count": 2,
+            "active_count": 1,
+            "assigned_cases": 10
+        },
+        "Finance": {
+            "employee_count": 1,
+            "active_count": 1,
+            "assigned_cases": 7
+        }
+    },
+    "high_workload_employees": [
+        "EMP001",
+        "EMP005"
+    ]
+}
