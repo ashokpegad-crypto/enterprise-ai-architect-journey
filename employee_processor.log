@@ -1,0 +1,16 @@
+2026-09-28 20:41:54,255 INFO __main__ Employee processing started
+2026-09-28 20:41:54,256 WARNING __main__ High workload detected
+2026-09-28 20:41:54,256 ERROR __main__ Employee processing failed
+2026-09-28 20:42:39,812 INFO __main__ Employee processing started
+2026-09-28 20:42:39,812 WARNING __main__ High workload detected
+2026-09-28 20:42:39,812 ERROR __main__ Employee processing failed
+2026-09-28 21:29:15,869 INFO __main__ Employee processing started
+2026-09-28 21:29:15,870 INFO __main__ Processing employee EMP001 - Ashok
+2026-09-28 21:29:15,870 WARNING __main__ High workload for EMP001
+2026-09-28 21:29:15,890 INFO __main__ Processing employee EMP002 - Ravi
+2026-09-28 21:29:15,890 INFO __main__ Processing employee EMP003 - Priya
+2026-09-28 21:29:15,890 INFO __main__ Processing employee EMP004 - Kiran
+2026-09-28 21:29:15,890 WARNING __main__ High workload for EMP004
+2026-09-28 21:29:15,890 INFO __main__ Processing employee EMP005 - Anil
+2026-09-28 21:29:15,890 WARNING __main__ High workload for EMP005
+2026-09-28 21:29:15,890 INFO __main__ Employee processing completed
