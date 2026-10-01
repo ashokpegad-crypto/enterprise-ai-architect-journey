@@ -88,3 +88,7 @@ For new concepts, understand:
 7. Documentation and Git milestone
 
 Do not treat later roadmap topics as current-day requirements unless a real dependency requires it.
+
+## Next
+
+- Day 14 — Review and refactor the API client; explain and defend the design decisions.
