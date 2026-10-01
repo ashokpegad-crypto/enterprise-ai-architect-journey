@@ -89,6 +89,25 @@ For new concepts, understand:
 
 Do not treat later roadmap topics as current-day requirements unless a real dependency requires it.
 
+
+## Learning Notes
+
+Daily learning notes:
+
+- [Day 1 — Python Basics](learning-notes/day01-python-basics.md)
+- [Day 2 — Python Control Flow](learning-notes/day02-python-control-flow.md)
+- [Day 3 — Data Structures, JSON and Data Processing](learning-notes/day03-python-data-structures-json.md)
+- [Day 4 — Functions, Scope and Processing Pipelines](learning-notes/day04-python-functions-pipelines.md)
+- [Day 5 — Modules, Packages, Imports and Code Organization](learning-notes/day05-python-modules-packages.md)
+- [Day 6 — Files, JSON, CSV and Configuration](learning-notes/day06-python-files-json-csv-config.md)
+- [Day 7 — Integration and Review](learning-notes/day07-python-integration-review.md)
+- [Day 8 — OOP](learning-notes/day08-python-oop.md)
+- [Day 9 — Dataclasses, Type Hints and Typing](learning-notes/day09-python-dataclasses-typing.md)
+- [Day 10 — Comprehensions, Iterators and Generators](learning-notes/day10-python-comprehensions-iterators-generators.md)
+- [Day 11 — Decorators and Context Managers](learning-notes/day11-decorators-context-managers.md)
+- [Day 12 — Logging, Debugging and Unit Testing](learning-notes/day12-python-logging-debugging-testing.md)
+- [Day 13 — REST API Client Library](learning-notes/day13-rest-api-client.md)
+
 ## Next
 
 - Day 14 — Review and refactor the API client; explain and defend the design decisions.
