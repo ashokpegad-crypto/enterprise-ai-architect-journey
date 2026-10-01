@@ -7,5 +7,5 @@ def calculate_total_cases(case1, case2, case3):
     return case1 + case2 + case3
 
 def build_employee_label(name, department):
-    """Build and retun employee label"""
+    """Build and return employee label"""
     return f"{name} - {department}"
