@@ -153,3 +153,62 @@ Timeouts, retries, exponential backoff and rate limits were explored only as ext
 **COMPLETE**
 
 The roadmap Day 13 target is a reusable REST API client library, and the final implementation demonstrates that outcome.
+
+## Knowledge Check — Questions and Answers
+
+1. What is a REST API?
+An HTTP-based interface that lets applications communicate with resources using methods such as GET and POST and structured data such as JSON.
+
+2. What does requests.get() do?
+It sends an HTTP GET request and returns a Requests Response object.
+
+3. What is response.status_code?
+The HTTP status code returned by the server, such as 200 or 404.
+
+4. Why use raise_for_status()?
+It raises a Requests HTTP exception for unsuccessful HTTP responses so failures are not silently treated as successful data.
+
+5. What does response.json() do?
+It parses a JSON response body into Python data such as a dictionary or list.
+
+6. Headers vs query parameters?
+Headers carry request metadata. Query parameters are values sent in the URL query string, typically for filtering or selection.
+
+7. What does json=data mean in a POST?
+It sends the supplied Python data as a JSON request body.
+
+8. Why create TodoApiClient?
+To encapsulate API communication in a reusable component rather than scattering HTTP code through application logic.
+
+9. Why is _get() useful?
+It centralizes common GET behavior such as URL building, request execution, status checking, and JSON parsing.
+
+10. Why create the Todo dataclass?
+To give the application a typed internal representation instead of passing raw external dictionaries through the system.
+
+11. Why convert the API dictionary into a Todo object?
+It creates a clear boundary between the external API schema and the internal application model.
+
+12. get_todo() vs get_all_todos()?
+The first retrieves one resource; the second retrieves a collection.
+
+13. Why does get_todos_by_user() use params?
+Because the API uses userId as a query parameter to filter the Todo collection.
+
+14. Explain API → JSON → _to_todo() → Todo → Application.
+The API returns external JSON, the client parses it, _to_todo() translates it into the internal dataclass, and the application uses that typed object.
+
+15. Why is this useful for a future LLM client?
+An LLM client follows the same boundary: build a request, call an external service, validate the response, parse JSON, translate the external response into an internal representation, and return usable data to application logic.
+
+## Day 14 bridge
+
+Next: review and refactor.
+
+Focus areas:
+- explain the complete API request/response lifecycle
+- explain client vs application responsibilities
+- defend the _get() abstraction
+- explain external schema vs internal model
+- identify production improvements without adding out-of-scope reliability/authentication features
+- explain the design without relying on tutorial code
