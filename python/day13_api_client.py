@@ -1,5 +1,6 @@
 import requests
 from dataclasses import dataclass
+from typing import Any
 
 @dataclass
 class Todo:
@@ -9,17 +10,21 @@ class Todo:
     completed: bool
 
 class TodoApiClient:
-	def __init__(self, base_url):
+	def __init__(self, base_url: str) -> None:
 		self.base_url = base_url.rstrip("/")
 
-	def _get(self, endpoint, params=None):
+	def _get(
+		self,
+		endpoint: str,
+		params: dict[str, int] | None = None,
+	) -> Any:
 		url = f"{self.base_url}/{endpoint.lstrip('/')}"
 		response = requests.get(url, params=params)
 		response.raise_for_status()
 		return response.json()
 
 	@staticmethod
-	def _to_todo(data) -> Todo:
+	def _to_todo(data: dict[str, Any]) -> Todo:
 		return Todo(
 			user_id=data["userId"],
 			id=data["id"],
@@ -39,14 +44,19 @@ class TodoApiClient:
 		return [self._to_todo(item) for item in data]
 
 
-client = TodoApiClient("https://jsonplaceholder.typicode.com")
-todo = client.get_todo(1)
-todos = client.get_all_todos()
-todos_by_user = client.get_todos_by_user(1)
+def main() -> None:
+	client = TodoApiClient("https://jsonplaceholder.typicode.com")
+	todo = client.get_todo(1)
+	todos = client.get_all_todos()
+	todos_by_user = client.get_todos_by_user(1)
 
-print(f"Total Todos: {len(todos)}")
-print(f"First Todo ID: {todo.id}")
-print(f"First Todo Title: {todo.title}")
-print(f"First Todo Completed: {todo.completed}")
-print()
-print(f"Todos for User 1: {len(todos_by_user)}")
+	print(f"Total Todos: {len(todos)}")
+	print(f"First Todo ID: {todo.id}")
+	print(f"First Todo Title: {todo.title}")
+	print(f"First Todo Completed: {todo.completed}")
+	print()
+	print(f"Todos for User 1: {len(todos_by_user)}")
+
+
+if __name__ == "__main__":
+	main()

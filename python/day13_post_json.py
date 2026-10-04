@@ -12,5 +12,5 @@ print(f"Status code: {response.status_code}")
 
 data = response.json()
 
-print(f"Request: {data["data"]}")
-print(f"Response: {data["json"]}")
+print(f"Request: {data['data']}")
+print(f"Response: {data['json']}")
