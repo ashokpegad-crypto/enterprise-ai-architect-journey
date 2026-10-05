@@ -1,0 +1,6 @@
+customer_details = ( "CUST001", "Ashok", "Premium")
+print("Customer Details:", customer_details)
+print("Customer ID:", customer_details[0])
+print("Customer Name:", customer_details[1])
+print("Customer Type:", customer_details[2])
+print("Total values:", len(customer_details))
