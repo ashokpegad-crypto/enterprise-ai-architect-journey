@@ -1,7 +1,9 @@
 Enterprise AI Architect Journey
 My journey from Pega Architect to Enterprise AI & Automation Architect.
+
 Objective
 Build the technical skills required to design, build, and architect enterprise AI systems outside of a single platform.
+
 Learning Focus
 - Python & Software Engineering
 - LLM Engineering
@@ -13,8 +15,10 @@ Learning Focus
 - AI Security
 - AI Evaluation
 - Enterprise AI Architecture
+
 Current Progress
 Python & Software Engineering Foundation
+
 Milestone	Status
 Day 1 — Python Basics	✅ Completed
 Day 2 — Control Flow	✅ Completed
@@ -30,31 +34,54 @@ Day 11 — Decorators & Context Managers	✅ Completed
 Day 12 — Logging, Debugging & Testing	✅ Completed
 Day 13 — REST API Client	✅ Completed
 Day 14 — Review, Refactoring, Design & Testing	✅ Completed
+Day 15 — HTTP Fundamentals	✅ Completed
 
+Learning Notes
+- Day 15 — HTTP Fundamentals: [learning-notes/day15-http-fundamentals.md](learning-notes/day15-http-fundamentals.md)
 
-Day 14 Validation
-Day 14 completed the Python/software-engineering review cycle.
-The final test validation:
-Ran 5 tests in 0.014s
-OK
-The tests covered:
-- successful summary calculation
-- mocked API interaction
-- RequestException fallback
-- multiple data sets
-- empty Todo collections
-The tests used mocked API behavior and did not make real HTTP calls.
+Day 15 Validation
+Day 15 completed the HTTP fundamentals stage of the API sequence.
+
+Exercises completed:
+- HTTP request anatomy
+- HTTP methods: GET, POST, PUT, DELETE
+- HTTP status codes
+- HTTP headers
+- Path parameters vs query parameters
+- HTTP fundamentals integration
+
+Integration validation:
+- GET, POST, PUT, and DELETE requests executed successfully
+- Query parameters and custom headers were verified
+- JSON request bodies and response JSON were inspected
+- HTTP status codes were observed across success and error categories
+
+Final knowledge check:
+Score: 8.3 / 10
+Result: Strong foundation
+
+Corrections locked in:
+- 404 is an HTTP response error, not a network connection failure
+- Specific resource identification generally uses a path; collection filtering generally uses query parameters
+
 Roadmap Alignment
-Day 14 remains part of the Python & Software Engineering foundation.
-The next learning stage is the API sequence:
 Day 15 → HTTP Fundamentals
-The roadmap is intentionally structured so that LLM Engineering begins later at Day 29, after the required Python, API, and supporting engineering foundations have been established.
+Day 16 → REST API Design
+Day 17 → Authentication: API keys, OAuth basics, JWT
+Day 18 → Python HTTP Clients
+Day 19 → External API Integration
+Day 20 → Timeouts, retries, exponential backoff, rate limits
+Day 21 → Review
+
+LLM Engineering is intentionally later in the roadmap at Day 29, after the required Python, API, and supporting engineering foundations.
+
 Repository Structure
 learning-notes/    - Learning notes and technical concepts
 python/            - Python practice and exercises
 ai-engineering/    - AI engineering experiments and components
 architecture/      - Architecture diagrams and decisions
 projects/          - Major portfolio projects
+
 Engineering Principles
 This repository is not only a collection of syntax exercises.
 The learning approach emphasizes:
@@ -68,6 +95,16 @@ The learning approach emphasizes:
 - refactoring
 - architectural thinking
 - practical enterprise-oriented design
+
+The learning method is:
+1. Understand what the concept is
+2. Understand why it is useful
+3. Understand how it works
+4. Use small examples and predictions
+5. Complete a focused exercise independently
+6. Review the implementation
+7. Capture the learning in repository documentation
+
 The goal is to progress from:
 Python Syntax
       ↓
@@ -84,5 +121,6 @@ Agentic AI / MCP
 Production AI Engineering
       ↓
 Enterprise AI Architecture
+
 About
 My journey from Pega Architect to Enterprise AI & Automation Architect.
