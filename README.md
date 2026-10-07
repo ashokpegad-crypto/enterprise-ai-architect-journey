@@ -38,6 +38,7 @@ Day 14 — Review, Refactoring, Design & Testing	✅ Completed
 Day 15 — HTTP Fundamentals	✅ Completed
 Day 16 — REST API Design	✅ Completed
 Day 17 — API Authentication	✅ Completed
+Day 18 — Python HTTP Clients & API Integration	✅ Completed
 
 Learning Notes
 - Day 15 — HTTP Fundamentals: [learning-notes/day15-http-fundamentals.md](learning-notes/day15-http-fundamentals.md)
@@ -45,6 +46,7 @@ Learning Notes
 - Day 16 — Employee Leave API Design: [learning-notes/day16_2_employee_leave_api_design.md](learning-notes/day16_2_employee_leave_api_design.md)
 - Day 16 — API Architecture Review: [learning-notes/day16_3_api_architecture_review.md](learning-notes/day16_3_api_architecture_review.md)
 - Day 17 — API Authentication: [learning-notes/day17-api-authentication.md](learning-notes/day17-api-authentication.md)
+- Day 18 — Python HTTP Clients & API Integration: [learning-notes/day18-python-http-clients.md](learning-notes/day18-python-http-clients.md)
 
 Day 16 Validation
 Day 16 completed the REST API design stage.
@@ -66,6 +68,32 @@ Architectural principles reinforced:
 - Query parameters for collection filtering
 - Explicit PUT vs PATCH contract
 - Clarification of ambiguous business states before API design
+
+Day 18 Validation
+Day 18 completed the Python HTTP client and API integration stage.
+
+Exercises completed:
+- requests.Session fundamentals
+- Session-level headers and request-level header override
+- Authenticated reusable Session with Bearer token
+- GET with query parameters
+- HTTP response validation with raise_for_status()
+- HTTPError handling for a deliberate 404
+- POST with JSON request body
+- Combined GET + POST employee API integration
+
+Key Python HTTP client mechanics practiced:
+- requests.Session() for reusable client configuration
+- session.headers.update(...) for common headers/authentication
+- params={...} for query parameters
+- json={...} for JSON request bodies
+- response.raise_for_status() for HTTP error handling
+- response.json() for response payload parsing
+
+Important engineering note:
+- Session-level configuration is reused across multiple endpoints, while request-specific headers/parameters remain local to the individual call.
+- HTTP response validation should occur before processing a business payload when the payload is only meaningful after a successful operation.
+- httpbin.org was used as an echo/inspection service, not as a real authentication server or protected enterprise API.
 
 Day 17 Validation
 Day 17 completed the authentication stage of the API sequence.
@@ -101,7 +129,7 @@ Roadmap Alignment
 Day 15 → HTTP Fundamentals
 Day 16 → REST API Design
 Day 17 → Authentication: API keys, OAuth basics, JWT
-Day 18 → Python HTTP Clients
+Day 18 → Python HTTP Clients & API Integration
 Day 19 → External API Integration
 Day 20 → Timeouts, retries, exponential backoff, rate limits
 Day 21 → Review
@@ -122,6 +150,7 @@ python/
 - day15_http_fundamentals/
 - day16_rest_api_design/
 - day17_api_authentication/
+- day18_python_http_clients/
 
 Day 15 and onward use numbered exercises inside the day-specific folder to keep the repository organized and easy to navigate.
 
