@@ -39,6 +39,7 @@ Day 15 — HTTP Fundamentals	✅ Completed
 Day 16 — REST API Design	✅ Completed
 Day 17 — API Authentication	✅ Completed
 Day 18 — Python HTTP Clients & API Integration	✅ Completed
+Day 19 — External API Integration	✅ Completed
 
 Learning Notes
 - Day 15 — HTTP Fundamentals: [learning-notes/day15-http-fundamentals.md](learning-notes/day15-http-fundamentals.md)
@@ -47,6 +48,7 @@ Learning Notes
 - Day 16 — API Architecture Review: [learning-notes/day16_3_api_architecture_review.md](learning-notes/day16_3_api_architecture_review.md)
 - Day 17 — API Authentication: [learning-notes/day17-api-authentication.md](learning-notes/day17-api-authentication.md)
 - Day 18 — Python HTTP Clients & API Integration: [learning-notes/day18-python-http-clients.md](learning-notes/day18-python-http-clients.md)
+- Day 19 — External API Integration: [learning-notes/day19-external-api-integration.md](learning-notes/day19-external-api-integration.md)
 
 Day 16 Validation
 Day 16 completed the REST API design stage.
@@ -68,6 +70,28 @@ Architectural principles reinforced:
 - Query parameters for collection filtering
 - Explicit PUT vs PATCH contract
 - Clarification of ambiguous business states before API design
+
+Day 19 Validation
+Day 19 completed the external API integration stage.
+
+Exercises completed:
+- GitHub public user integration
+- GitHub repository collection integration
+- Multi-endpoint user summary integration
+- External-to-application data normalization
+- Reusable runtime GitHub user lookup
+
+Integration capabilities demonstrated:
+- Real external API calls using requests.Session()
+- Object and collection response handling
+- Multi-endpoint data composition
+- Derived application-level values such as total stars
+- External schema → application schema mapping
+- Controlled 404 handling without a traceback
+
+Engineering note:
+- The final lookup exercise was accepted as completed with one recorded production refinement: the current HTTPError handler labels every HTTPError as USER NOT FOUND; production code should distinguish 404 from other 4xx/5xx responses.
+- GitHub/httpbin values are external-system data and can change over time.
 
 Day 18 Validation
 Day 18 completed the Python HTTP client and API integration stage.
@@ -151,6 +175,7 @@ python/
 - day16_rest_api_design/
 - day17_api_authentication/
 - day18_python_http_clients/
+- day19_external_api_integration/
 
 Day 15 and onward use numbered exercises inside the day-specific folder to keep the repository organized and easy to navigate.
 
