@@ -18,4 +18,8 @@ for repo in data:
     print(f"HTML URL: {repo['html_url']}")
     print(f"Language: {repo['language']}")
     print(f"Stars: {repo['stargazers_count']}")
+<<<<<<< HEAD
     print("---")
+=======
+    print("---")
+>>>>>>> 59c915183690cb4f809e962c46043f11ebac5c29

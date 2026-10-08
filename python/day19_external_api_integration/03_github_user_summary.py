@@ -15,7 +15,10 @@ response2 = session.get(url=f"{url}/repos")
 response2.raise_for_status()
 data2 = response2.json()
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59c915183690cb4f809e962c46043f11ebac5c29
 print("=== GITHUB USER SUMMARY ===")
 print(f"User: {data1['login']}")
 print(f"Name: {data1['name']}")
@@ -23,4 +26,7 @@ print(f"Public Repositories: {data1['public_repos']}")
 print(f"Repositories Returned: {len(data2)}")
 print(f"Followers: {data1['followers']}")
 print(f"Total Stars: {sum(repo['stargazers_count'] for repo in data2)}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59c915183690cb4f809e962c46043f11ebac5c29
