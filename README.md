@@ -40,6 +40,7 @@ Day 16 — REST API Design	✅ Completed
 Day 17 — API Authentication	✅ Completed
 Day 18 — Python HTTP Clients & API Integration	✅ Completed
 Day 19 — External API Integration	✅ Completed
+Day 20 — API Resilience	✅ Completed
 
 Learning Notes
 - Day 15 — HTTP Fundamentals: [learning-notes/day15-http-fundamentals.md](learning-notes/day15-http-fundamentals.md)
@@ -49,6 +50,7 @@ Learning Notes
 - Day 17 — API Authentication: [learning-notes/day17-api-authentication.md](learning-notes/day17-api-authentication.md)
 - Day 18 — Python HTTP Clients & API Integration: [learning-notes/day18-python-http-clients.md](learning-notes/day18-python-http-clients.md)
 - Day 19 — External API Integration: [learning-notes/day19-external-api-integration.md](learning-notes/day19-external-api-integration.md)
+- Day 20 — API Resilience: [learning-notes/day20-api-resilience.md](learning-notes/day20-api-resilience.md)
 
 Day 16 Validation
 Day 16 completed the REST API design stage.
@@ -70,6 +72,38 @@ Architectural principles reinforced:
 - Query parameters for collection filtering
 - Explicit PUT vs PATCH contract
 - Clarification of ambiguous business states before API design
+
+Day 20 Validation
+Day 20 completed the API resilience stage.
+
+Exercises completed:
+- Request timeout and Timeout exception handling
+- Basic bounded retry for 503 Service Unavailable
+- Exponential backoff between retries
+- 429 Too Many Requests handling
+- Retry-After handling
+- Integrated resilient API client
+
+Resilience mechanics practiced:
+- Explicit request timeout
+- requests.exceptions.Timeout
+- Maximum retry attempts
+- 503-specific retry decision
+- Exponential delay calculation
+- time.sleep() between retry attempts
+- 429 rate-limit detection
+- Retry-After delay handling
+
+Failure behavior reinforced:
+- Timeout -> handle transport-level timeout
+- 503 -> retry with bounded exponential backoff
+- 429 -> respect Retry-After when supplied
+- 404 -> do not blindly retry
+
+Engineering notes:
+- Manual retry logic was used so the mechanics remain visible before introducing higher-level retry abstractions.
+- The controlled 429 demonstration used separate httpbin endpoints for status and Retry-After header generation; a real API would normally supply Retry-After on the 429 response itself.
+- Production code should validate auxiliary responses before consuming headers and should apply API-specific retry policies.
 
 Day 19 Validation
 Day 19 completed the external API integration stage.
@@ -176,6 +210,7 @@ python/
 - day17_api_authentication/
 - day18_python_http_clients/
 - day19_external_api_integration/
+- day20_api_resilience/
 
 Day 15 and onward use numbered exercises inside the day-specific folder to keep the repository organized and easy to navigate.
 
